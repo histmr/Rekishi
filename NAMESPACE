@@ -2,4 +2,5 @@
 
 export(kanji_counter)
 export(normalize_kanji)
+importFrom(stringi,stri_count)
 importFrom(stringi,stri_replace_all_fixed)
