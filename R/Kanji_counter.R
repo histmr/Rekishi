@@ -7,13 +7,13 @@
 #' @importFrom stringi stri_count
 #' @export
 #' @examples
-#' kanji_count(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
-kanji_counter <- function(sample_text){
-  kanji <- unlist(lapply(sample_text, FUN = function(x) stri_count(x, regex = "[\\x{4e00}-\\x{9faf}]")))
-  hiragana <- unlist(lapply(sample_text, FUN = function(x) stri_count(x, regex = "[\\x{3041}-\\x{3096}]")))
-  katakana <- unlist(lapply(sample_text, FUN = function(x) stri_count(x, regex = "[\\x{30A1}-\\x{30FA}|\\x{30FC}-\\x{30FE}|\\x{FF66}-\\x{FF9e}]")))
-  hentaigana <- unlist(lapply(sample_text, FUN = function(x) stri_count(x, regex = "[\\x{1B100}-\\x{1B11E}|\\x{1B001}-\\x{1B0FF}]")))
-  roman_letters <- unlist(lapply(sample_text, FUN = function(x) stri_count(x, regex = "[\\x{FF21}-\\x{FF3a}|\\x{FF41}-\\x{FF5a}]|x{0041}-\\x{005A}]|x{0061}-\\x{007A}]")))
+#' kanji_counter(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
+kanji_counter <- function(doc){
+  kanji <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{4e00}-\\x{9faf}]")))
+  hiragana <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{3041}-\\x{3096}]")))
+  katakana <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{30A1}-\\x{30FA}|\\x{30FC}-\\x{30FE}|\\x{FF66}-\\x{FF9e}]")))
+  hentaigana <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{1B100}-\\x{1B11E}|\\x{1B001}-\\x{1B0FF}]")))
+  roman_letters <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{FF21}-\\x{FF3a}|\\x{FF41}-\\x{FF5a}]|x{0041}-\\x{005A}]|x{0061}-\\x{007A}]")))
 
    count_results <- data.frame("kanji"=kanji, "hiragana"=hiragana, "katakana"=katakana, "hentaigana"=hentaigana, "roman_letters"=roman_letters)
   return(count_results)

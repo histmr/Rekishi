@@ -4,7 +4,7 @@
 \alias{kanji_counter}
 \title{Kanji and kana counter}
 \usage{
-kanji_counter(sample_text)
+kanji_counter(doc)
 }
 \arguments{
 \item{doc}{A string literal or object}
@@ -13,7 +13,7 @@ kanji_counter(sample_text)
 This function returns a dataframe with statistics for the types of characters in a string or character vector
 }
 \examples{
-kanji_count(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
+kanji_counter(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
 }
 \keyword{Japanese,}
 \keyword{hiragana,}
