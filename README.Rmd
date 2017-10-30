@@ -1,0 +1,28 @@
+---
+title: "Rekishi"
+author: "Ravina"
+date: "October 29, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Rekishi
+
+I developed this package during my own research in Japanese history. It includes functions for working with Japanese text and databases
+
+License: MIT
+
+For more information please contact histmr@emory.edu
+
+## Installation
+
+To install from GitHub use the devtools package
+
+```{r eval=FALSE}
+devtools::install_github("histmr/Rekishi")
+```
+
+
