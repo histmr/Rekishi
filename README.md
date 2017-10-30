@@ -37,13 +37,9 @@ The function kanji_count() returns a dataframe with statistics for the types of 
  character type         | Unicode range(s)
 --- | ---
  kanji                  | 4E00-9fAf
---- | ---
  hiragana               | 3041-3096
---- | ---
  katakana               | 30A1-30FA, 30FC-30FE, FF66-FF9
---- | ---
  hentaigana             | 1B100-1B11E, 1B001-1B0FF
---- | ---
  Roman letters          | FF21-FF3A, FF41-FF5A, 0041-005A, 0061-007A
 
 
