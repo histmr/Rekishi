@@ -4,7 +4,7 @@
 #'
 #' @param doc A string literal or object
 #' @keywords Japanese, kanji, hiragana, katakana
-#' @importFrom stringi stri_replace_all_fixed
+#' @importFrom stringi stri_count
 #' @export
 #' @examples
 #' kanji_count(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
