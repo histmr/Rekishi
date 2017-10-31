@@ -4,7 +4,7 @@ author: "Ravina"
 date: "October 29, 2017"
 output: html_document
 ---
-### Rekishi
+## Rekishi
 
 I developed this package during my own research in Japanese history. It includes functions for working with Japanese text and databases
 
@@ -21,7 +21,7 @@ devtools::install_github("histmr/Rekishi")
 ```
 ## Usage
 
-# normalize_kanji()
+### normalize_kanji()
 
 The function normalize_kanji() converts old 旧漢字 and variant 異体字 characters into their modern counterparts for purposes of text comparison. The function supports both literal strings and characters vectors.
 
@@ -33,7 +33,7 @@ example <- "國學"
 normalize_kanji(example)
 [1] "国学"
 ```
-#kanji_count()
+### kanji_count()
 
 The function kanji_count() returns a dataframe with statistics for the types of characters in a string or characters vector using the following definitions.
 
@@ -66,6 +66,6 @@ kanji_counter(example)
 
 Note that while hentaigana exists in Unicode, many fonts/typefaces render that range as boxes or other glyphs.
 
-# NDL_counter
+### NDL_counter
 
 The function NDL_counter scrapes data from the National Diet Library's digital collection . It takes three arguments: the search string, the start year (as a foud digit number) and the end year. 
