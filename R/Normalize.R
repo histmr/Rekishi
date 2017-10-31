@@ -9,8 +9,8 @@
 #' @export
 #' @examples
 #' normalize_kanji("亞啞惡蘆鰺壓菴桉")
+
 normalize_kanji <- function(doc) {
-  stri_replace_all_fixed(doc, kanji_conversion_table$old, kanji_conversion_table$new,
-                         vectorize_all = FALSE)
+  stri_replace_all_fixed(doc, kanji_conversion_table$old, kanji_conversion_table$new, vectorize_all = FALSE)
 }
 
