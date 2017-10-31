@@ -68,4 +68,6 @@ Note that while hentaigana exists in Unicode, many fonts/typefaces render that r
 
 ### NDL_counter
 
-The function NDL_counter scrapes data from the National Diet Library's digital collection . It takes three arguments: the search string, the start year (as a foud digit number) and the end year. 
+The function NDL_counter scrapes data from the National Diet Library's digital collection. It takes three arguments: the search string, the start year (as a foud digit number) and the end year. For years with no hits, the function replaces NA with zero for a complete time series
+
+NDL_counter("犬", 1868, 1925)
