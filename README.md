@@ -6,7 +6,7 @@ output: html_document
 ---
 ## Rekishi
 
-I developed this package during my own research in Japanese history. It includes functions for working with Japanese text and databases
+I developed this package during my own research in Japanese history. It includes functions for working with Japanese text and databases.
 
 License: MIT
 
