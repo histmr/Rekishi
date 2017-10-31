@@ -2,7 +2,7 @@ Package: Rekishi
 Title: Tools for Japanese history
 Version: 0.1
 Authors@R: person("Ravina", "Mark", email = "mark.ravina@gmail.com", role = c("aut", "cre"))
-Description: Functions for working with old Japanese texts and historical databases
+Description: Functions for working with old Japanese texts and historical databases.
 Depends: R (>= 3.3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
