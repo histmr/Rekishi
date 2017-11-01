@@ -13,7 +13,7 @@ kanji_counter(doc)
 This function returns a dataframe with statistics for the types of characters in a string or character vector
 }
 \examples{
-kanji_counter(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
+kanji_counter("x")
 }
 \keyword{Japanese,}
 \keyword{hiragana,}

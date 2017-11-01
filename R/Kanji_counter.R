@@ -7,7 +7,7 @@
 #' @importFrom stringi stri_count
 #' @export
 #' @examples
-#' kanji_counter(c("東京の國は寒いよ。","亞細亞は寒いよ。"))
+#' kanji_counter("x")
 kanji_counter <- function(doc){
   kanji <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{4e00}-\\x{9faf}]")))
   hiragana <- unlist(lapply(doc, FUN = function(x) stri_count(x, regex = "[\\x{3041}-\\x{3096}]")))

@@ -10,11 +10,10 @@ normalize_kanji(doc)
 \item{doc}{A string literal or object}
 }
 \description{
-This function converts old 旧漢字 and variant 異体字 Japanese characters to their modern equivalents.
-The conversion table was adapted from # http://wwwap.hi.u-tokyo.ac.jp/ships/itaiji_list.jsp 確認日：2017年10月29日
+This function converts old and variant Japanese characters to their modern equivalents.
 }
 \examples{
-normalize_kanji("亞啞惡蘆鰺壓菴桉")
+normalize_kanji("x")
 }
 \keyword{Japanese,}
 \keyword{kanji}
